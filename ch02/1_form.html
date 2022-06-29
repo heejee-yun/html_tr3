@@ -8,7 +8,7 @@
 
 <body>
 <!-- 	<form action="get" action="./result.html"> -->
-		<form method="get" action="./result.html">
+		<form method="get" action="./result.html" id="form">
 <!-- 	<form method="post" action="./result.html"> -->
 
 
@@ -51,15 +51,28 @@
 		<br><br>
 		<textarea rows="10" cols="50" name="contents" placeholder="posting"></textarea>
 		
-		<input type="hidden" name="" value="">
+		<input type="hidden" name="seq" value="73456">
 		
-		<input type="date">
-			
-		<br><br><input type="submit">
 		
-
+<!-- 		<input type="date">		
+		<br><br><input type="submit" value="354634345"> -->
+		
+		<br><br><input type="button" id="btnSave" value="전송합니다." onclick="here();">
+		
+		
 	</form>
-	
-	
+
+		<script type="text/javascript">
+		/* validation */
+		function here() {
+			/*alert("*nickname: " + document.getElementrById("nickname").value);*/
+			alert("asdsaf")
+			document.getElementById("form").submit();
+		}
+		
+	</script>
+		
+		
+		
 </body>
 </html>
