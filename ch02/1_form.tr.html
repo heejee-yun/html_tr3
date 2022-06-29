@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<title>H</title>
+</head>
+<body>	
+	<h2><b>기본정보</b></h2>
+	<table>
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">✔이름</th>
+			<td><textarea rows="1" cols="20" name="name" placeholder="이름"></textarea></td>
+			<td colspan="2"></td>
+	 		<!-- <td></td> -->
+		</tr>	
+		<tr>
+			<th rowspan="2" style="background-color:grey; color:white;" width="100px">✔아이디</th>
+			<td><textarea rows="1" cols="20" name="id" placeholder="아이디"></textarea>
+			</td>
+			<td><input type="button" id="btnSave" value="✔아이디중복확인" onclick="here();"></td>
+ 			<td></td>
+		</tr>
+		<tr>
+			<!-- <th></th> -->
+			<td colspan="3">>※6~16자까지 영문자(소문자), 숫자 사용 가능합니다.</td>
+			<!-- <td></td> -->
+			<!-- <td></td> -->
+		</tr>	
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="2">✔비밀번호</th>
+			<td><textarea rows="1" cols="20" name="password" placeholder="비밀번호"></textarea>
+			<!-- <td></td> -->	
+			<!-- <td></td> -->	
+		</tr>
+
+		<tr>
+			<!-- <th></th> -->
+			<td colspan="3">
+				※6~16자까지 영문자(대문자), 숫자 및 특수문자 사용 가능합니다.
+				<br>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
+		</tr>	
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">✔비밀번호확인</th>
+			<td><textarea rows="1" cols="20" name="password_repeated" placeholder="비밀번호확인"></textarea></td>
+			<td colspan="2"></td>
+			<!-- <td></td> -->
+		</tr>		
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">✔이메일</th>
+			<td><textarea rows="1" cols="30" name="e-mail_before@" placeholder=""></textarea>@</td>
+			<td><textarea rows="1" cols="20" name="e-mail_after@" placeholder=""></textarea></td>
+			<td></td>
+		</tr>
+		<tr>	
+			<th rowspan="3"style="background-color:grey; color:white;" width="100px">✔연락처</th>
+			<td>휴대전화<textarea rows="1" cols="20" name="no1" placeholder=""></textarea>-</td>
+			<td><textarea rows="1" cols="20" name="no2" placeholder=""></textarea>-</td>
+	 		<td><textarea rows="1" cols="20" name="no2" placeholder=""></textarea></td>
+		</tr>
+		<tr>
+			<!-- <th></th> -->
+			<td>일반전화<textarea rows="1" cols="20" name="no1" placeholder=""></textarea>-</td>
+			<td><textarea rows="1" cols="20" name="no2" placeholder=""></textarea>-</td>
+	 		<td><textarea rows="1" cols="20" name="no2" placeholder=""></textarea></td>
+		</tr>
+		<tr>
+			<!-- <th></th> -->
+			<td colspan="3">※연락처는 둘 중 하나만 입력해도 됩니다.</td>
+			<!-- <td></td> -->
+	 		<!-- <td></td> -->
+		</tr>
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">✔우편번호</th>
+			<td><textarea rows="1" cols="20" name="postcode" placeholder=""></textarea></td>
+			<td><input type="button" id="btnSave" value="✔주소검색" onclick="here();"></td>
+	 		<td></td>
+		</tr>		
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="2">✔주소</th>
+			<td colspan="3"><textarea rows="1" cols="100" name="ad" placeholder=""></textarea></td>
+	 		<!-- <td></td> -->
+	 		<!-- <td></td> -->
+		</tr>
+		<tr>
+			<!-- <th></th> -->
+			<td><textarea rows="1" cols="20" name="ad2" placeholder=""></textarea></td>
+	 		<td></td>
+	 		<td></td>
+		</tr>
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">✔정보수신여부</th>
+			<td>서비스 및 이벤트 소식을</td>
+			<td colspan="2">
+				<input type="checkbox" name="Email">Email로 수신하겠습니다.<input type="checkbox" name="sms">SMS로 수신하겠습니다.
+			</td>			
+	 		<!-- <td></td> -->
+		</tr>				
+	</table>
+	<h2><b>작가정보</b></h2>
+	<table>
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px">프로필이미지</th>
+			<td><input type="button" id="btnSave" value="파일 선택" onclick="here();"></td>
+			<td>선택된 파일 없음</td>			
+	 		<td></td>
+		</tr>	
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="2">✔필명</th>
+			<td colspan="3"><textarea rows="1" cols="100" name="fan_name" placeholder=""></textarea></td>
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>		
+		<tr>
+			<!-- <th></th> -->
+			<td colscan="3">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</td>
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="2">대표작</th>
+			<td colspan="3"><textarea rows="1" cols="100" name="best" placeholder=""></textarea></td>
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>	
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="4">수상내역</th>
+			<td rowspan="4" colspan="3"><textarea rows="1" cols="100" name="best" placeholder=""></textarea></td>
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>					
+		<tr>
+			<!-- <th></th> -->
+			<!-- <td></td> -->
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>	
+		<tr>
+			<!-- <th></th> -->
+			<!-- <td></td> -->
+			<!-- <td></td> -->		
+	 		<!-- <td></td> -->
+		</tr>								
+		<tr>
+			<th style="background-color:grey; color:white;" width="100px" rowspan="2"></th>
+			<td colspan="3">※여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</td>
+			<td></td>		
+	 		<td></td>
+		</tr>			
+		
+				
+				
+	</table>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
