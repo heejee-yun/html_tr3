@@ -63,21 +63,22 @@
 			<tr>
 				<th>✔이메일</th>
 				<td>
-				<input type="text" name="email" id="email">@<input type="text" name="name" id="name">
-				<select name="gender" id="">
-					<option value="">이메일주소선택
-					<option value="남자">gmail.com
-					<option value="여자">naver.com
-				</select>
+					<input type="text" name="email" id="email">@<input type="text" name="name" id="name">
+					<select name="gender" id="">
+						<option value="">이메일주소선택
+						<option value="남자">gmail.com
+						<option value="여자">naver.com
+					</select>
 				</td>
 			</tr>
 			<tr>	
 				<th>✔연락처</th>
-				<td>휴대전화
+				<td>
+					휴대전화
 					<select name="gender" id="">
 						<option value="">010
-						<option value="남자">011
-						<option value="여자">017
+						<option value="011">011
+						<option value="017">017
 					</select>
 					-<input type="text" name="no" id="no">
 					-<input type="text" name="no2" id="no2">				
@@ -102,7 +103,8 @@
 			</tr>
 			<tr>
 				<th>✔정보수신여부</th>
-				<td>서비스 및 이벤트 소식을
+				<td>
+					서비스 및 이벤트 소식을
 					<input type="checkbox" name="Email">Email로 수신하겠습니다.
 					<input type="checkbox" name="sms">SMS로 수신하겠습니다.
 				</td>			
@@ -136,8 +138,8 @@
 			<tr>
 				<th>주요작품</th>
 				<td>
-					<input type="story" name="story" placeholder="스토리 제목을 입력하세요">
-					<input type="story2" name="story2" placeholder="해당 스토리의 역활을 입력하세요">
+					<input type="text" name="story" placeholder="스토리 제목을 입력하세요">
+					<input type="text" name="story2" placeholder="해당 스토리의 역활을 입력하세요">
 		 			<input type="button" id="btnDel" value="❌삭제" onclick="here();"><br>
 					※본인 참여 주요작품의 제목 및 역활에 대해 등록해 주시기 바랍니다.<br>
 					(역활은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역활을 정확히 기재해 주시기 바랍니다.)
@@ -182,14 +184,15 @@
 			</tr>
 			<tr>
 				<th>주요경력</th>
-				<td>주요경력사항을 등록해 주시기 바랍니다.
+				<td>
+					주요경력사항을 등록해 주시기 바랍니다.
 					<br>(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)
 					<br><input type="datetime-local" name="datetime-local">~
 					<input type="datetime-local" name="datetime-local">
 					<input type="fanname" name="fanname" placeholder="사업내용을 입력해주세요">
 					<input type="fanname2" name="fanname2" placeholder="담당업무를 입력해주세요">
-					<input type="button" name="del" value="❌삭제 onclick="here();">
-					<input type="button" name="add" value="➕추가 onclick="here();">
+					<input type="button" name="del" value="❌삭제" onclick=here();">
+					<input type="button" name="add" value="➕추가" onclick=here();">
 				</td>
 			</tr>
 		</table>
