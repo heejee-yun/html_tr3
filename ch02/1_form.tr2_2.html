@@ -13,7 +13,7 @@
 	
 	<style type="text/css">
 		table, th, td{
-			border: 1px solid black;
+			border: 1px solid lightgray;
 			border-collapse: collapse;
 		}
 	
@@ -23,6 +23,7 @@
 		}
 		th{
 			background-color:olive;
+			color:white;
 		}
 		td{
 			color:orange;
@@ -33,7 +34,7 @@
 <body>	
 	<h2><b>📒기본정보</b></h2>
 	<form>
-		<table>
+		<table width="100%">
 			<tr>
 				<th>✔이름</th>
 				<td><input type="text" name="name" id="name"></td> <!-- input type="text" 로 쓰기 -->
@@ -107,7 +108,7 @@
 		</table>
 		<br>
 		<h2><b>📒작가정보</b></h2>
-		<table>
+		<table width="100%">
 			<tr>
 				<th>프로필이미지</th>
 				<td><input type="file" name="file"></td>
@@ -145,16 +146,15 @@
 				<td><input type="radio" name="public">공개<input type="radio" name="private">비공개</td>
 			</tr>	
 		</table>
-		<center><input style="background-color:lime;" type="button" id="btnSave" value="✔저장"><input style="background-color:gray;" type="button" id="DelAll" value="취소"></center>
+		<center>
+			<input style="background-color:lime;" type="button" id="btnSave" value="✔저장" onclick="here();">
+			<input style="background-color:gray;" type="button" id="DelAll" value="취소" onclick="here();">
+		</center>
 		<br>
-		<table>
+		<table width="100%">
 			<tr> 
 				<th>✔소속(회사)</th>
-				<td colspan="2"><textarea rows="1" cols="40" name="company"></textarea></td>
-				<!-- <td></td> -->
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><input type="text" name="com" id="com"></td>
 			</tr>
 			<tr>
 				<th>사업자등록번호</th>
@@ -182,16 +182,25 @@
 				<th>주요경력</th>
 				<td>주요경력사항을 등록해 주시기 바랍니다.
 					<br>(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)
-					<input type="datetime-local" name="datetime-local">~
+					<br><input type="datetime-local" name="datetime-local">~
 					<input type="datetime-local" name="datetime-local">
-					<input type="fan_name" name="fan_name" placeholder="사업내용을 입력해주세요">
-					<input type="fan_name" name="fan_name" placeholder="담당업무를 입력해주세요">
-					<input type="button" name="del" value="❌삭제">
-					<input type="button" name="add" value="➕추가">
+					<input type="fanname" name="fanname" placeholder="사업내용을 입력해주세요">
+					<input type="fanname2" name="fanname2" placeholder="담당업무를 입력해주세요">
+					<input type="button" name="del" value="❌삭제 onclick="here();">
+					<input type="button" name="add" value="➕추가 onclick="here();">
 				</td>
 			</tr>
 		</table>
-	</form>																	
+	</form>		
+	<script type="text/javascript">
+	/* validation */
+	function here() {
+		/*alert("*nickname: " + document.getElementrById("nickname").value);*/
+		alert("서비스 준비 중입니다")
+		document.getElementById("form").submit();
+	}
+	
+	</script>											
 </body>
 </html>
 
