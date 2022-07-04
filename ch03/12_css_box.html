@@ -5,17 +5,25 @@
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<title>H</title>
 	<style type="text/css">
-/* 		div, ul, li{
-		display: inline;
-	}
-		/* display: inline; 이 줄 없으면 그 줄 자체에 다 적용 됨 */
 	
-	span {
-		display: black;
+ 		div, ul, li{
+ 		/* display: inline; */
+		display: inline-block;
 		width: 100px;
 		height: 50px;
 		text-align: center;
 	}
+	
+		/* display: inline; 이 줄 없으면 그 줄 자체에 다 적용 됨 */
+	
+	/* #참고로 인라인 보다 인라인-블럭을 더 많이 사용  */
+	
+/* 	span {
+		display: black;
+		width: 100px;
+		height: 50px;
+		text-align: center;
+	} */
 	
 		
 	
@@ -24,14 +32,16 @@
 </head>
 
 <body>
-<!-- <!-- 	div로 나누는건 네이버 홈페에서 메일 카페 블로그 있는 줄 처럼 만들 때 사용
-	<div style="background-color: red;">원영</div>
+	<!-- div로 나누는건 네이버 홈페에서 메일 카페 블로그 있는 줄 처럼 만들 때 사용 -->
+	
+	
+	<div style="background-color: red;"><span>원영</span>></div>
 	<div style="background-color: blue;">지현</div>
 
 	<hr>
 	
 	<div style="background-color: red; width: 100px">원영</div>
-	<div style="background-color: blue; width: 200px">지현</div>
+	<div style="background-color: blue; height: 200px">지현</div>
 	
 	<hr>
 	
@@ -40,15 +50,15 @@
 		<li>지현
 	</ul>
 	
-	 --> 
+	 
 	<hr>
 	
-	
+<!-- 	
 	<span style="background-color: red;">원영</span>
 	<span style="background-color: red;">지현</span>
 	<span style="background-color: red;">동건</span>
 	<span style="background-color: red;">소영</span>
-	
+	-->
 	
 </body>
 </html>
