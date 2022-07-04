@@ -8,46 +8,73 @@
 
 	<style type="text/css">
 		table {
-			border}
-	
+			border: solidl;
+			border-width: 1px;
+			
+			/* border-collapse: seperate; */
+			border-width: collapse;
+			
+			/* border-spacing: 10px 10px; */
+			width: 100%;
+			
+			/* table-layout: auto; */
+			table-layout: fixed;
+						
+		}
+		
+		tr, th, td {
+			border: solid;
+			border-width: 1px;
+			border-collapse:  collapse;
+			text-align: center;
+			height: 50px;
+			
+			/* vertical-align: top; */
+			vertical-align: top; 
+		}
+		
+/* 		혹시 아래에 설정한 내용과 위에 내용이 겹쳐 실행이 불가할 경우 
+		F12로 개발자 모드 열고 상단 마우스 표시(파란색으로 만들기)와 Elemnets + Styles로 
+		만들어서 보면 실행기 	불가한 부분에는 취소선이 그어져 있음  */
+	</style>
 	
 	
 <body>
 	<table>
 		<tr>
-			<th>번호</th>
-			<th>이름</th>
-			<th>아이디</th>
+			<th width="80px" height="100px">번호</th>
+			<th width="80px">이름</th>
+			<th width="100px">아이디</th>
 			<th>이메일</th>
-			<th>모바일</th>
+			<th width="20px">모바일</th>
 		</tr>
 		<tr>
-			<th>1</th>
-			<th>장원영</th>
-			<th>enjpoyuyyy</th>
-			<th>asdfsadf@gasdasd.com</th>
-			<th>010-9999-9999</th>
+			<td>1</td>
+			<td>장원영</td>
+			<td>enjpoyuyyy</td>
+			<td>asdfsadf@gasdasd.com</td>
+			<td>010-9999-9999</td>
 		</tr>
 		<tr>
-			<th>2</th>
-			<th>전지현</th>
-			<th>jjh</th>
-			<th>jjh@gasdasd.com</th>
-			<th>010-9999-9999</th>
+			<td>2</td>
+			<td>전지현</td>
+			<td>jjh</td>
+			<td>jjh@gasdasd.com</td>
+			<td>010-9999-9999</td>
 		</tr>
 		<tr>
-			<th>3</th>
-			<th>장동건</th>
-			<th>cheesy</th>
-			<th>cheeesy@gasdasd.com</th>
-			<th>010-9999-9999</th>
+			<td>3</td>
+			<td>장동건</td>
+			<td>cheesy</td>
+			<td>cheeesy@gasdasd.com</td>
+			<td>010-9999-9999</td>
 		</tr>
 		<tr>
-			<th>4</th>
-			<th>고소영</th>
-			<th>nutty</th>
-			<th>nutty@gasdasd.com</th>
-			<th>010-9999-9999</th>
+			<td>4</td>
+			<td>고소영</td>
+			<td>nutty</td>
+			<td>nutty@gasdasd.com</td>
+			<td>010-9999-9999</td>
 		</tr>		
 	</table>
 
