@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial scale=1.0">
+		<title>지원서 등록</title>	
+		<style type="text/css">
+			table, th, td{
+				border: 1px solid lightgray;
+				border-collapse: collapse;
+			}
+		
+			th, td{
+				padding: 10px;
+				text-align: center;
+        		vertical-align: middle;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<form>
+			<h1>h1 align="left">입사지원서</h1>	
+			<table width="100%">
+				<tr>
+					<th width="200px" style="background-color:lightblue;">지원분야</th>
+					<th width="200px">
+						<select>
+							<option>웹개발
+							<option>마케팅
+						</select>
+					</th>
+					<th width=200px" style="background-color:lightblue;">경력부분</th>
+					<th width=200px">
+						<select>
+							<option>신입
+							<option>경력
+						</select>
+					</th>
+					<th width="200px" style=" background-color:lightblue;">희망연봉</th>
+					<th>회사 내규에 따름</th>
+				</tr>
+			</table>	
+			<br>	
+			<b>기본정보</b>
+			<table width="100%">
+				<tr>
+					<td width="150px" rowspan="6" style="color:red;">
+						정장차림의 증명사진<br> 넣으시면<br> 됩니다. 단축키<br> ctrl+N+I<br>
+						<input type="file" name="file">
+					</td>
+					<td width="100px" style="background-color:lightblue;">성명</td>
+					<td><input type="text"></td>
+					<td width="100px" style="background-color:lightblue;">한문</td>
+					<td><input type="text"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">영문</td>
+					<td><input type="text"></td>
+					<td style="background-color:lightblue;">생년월일</td>
+					<td><input type="text"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">전화번호</td>
+					<td><input type="text"></td>
+					<td style="background-color:lightblue;">비상연락망</td>
+					<td><input type="text"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">전자우편</td>
+					<td><input type="text"></td>
+					<td style="background-color:lightblue;">나이</td>
+					<td><input type="text"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">주소</td>
+					<td colspan="3"><input type="text"></td>
+				<!--	<td>합치는 곳</td>	-->
+				<!--	<td>합치는 곳</td>	-->
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">취미생활</td>
+					<td colspan="3">
+						리스트에서 선택
+						<select>
+							<option>노래
+							<option>댄스
+							<option>코딩
+							<option>기타
+						</select>
+					</td>
+				<!--	<td>합치는 곳</td>	-->
+				<!--	<td>합치는 곳</td>	-->	
+				</tr>
+			</table>	
+			<br>	
+			<b>학력사항(최신이력이 가장 위로)</b>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">기간</td>
+						<td style="background-color:lightblue;">출신학교</td>
+						<td style="background-color:lightblue;">구분</td>
+						<td style="background-color:lightblue;">학과</td>
+						<td style="background-color:lightblue;">소재지</td>
+					</tr>
+				</thead>	
+				<tr>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+				</tr>	
+				<tr>
+					<td  style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+					<td style="color:orange;"><input type="text"></td>
+				</tr>
+			</table>	
+			<br>	
+			<b>교육연수</b>
+			<table width="100%">
+				<thead>
+					<tr style="background-color:lightblue;"></tr>
+						<td style="background-color:lightblue;">연수기간</td>
+						<td style="background-color:lightblue;">연수기관</td>
+						<td style="background-color:lightblue;">연수과정 및 내용</td>
+					</tr>	
+				</thead>	
+				<tbody>
+					<tr>
+						<td style="color:orange;"><input type="text"></td>
+						<td style="color:orange;">
+							<input type="text">
+						</td>
+						<td style="color:orange;">
+							<input type="text">
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+			<br>	
+			<b>자격사항</b>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">취득일</td>
+						<td style="background-color:lightblue;">종류 및 등급</td>
+						<td style="background-color:lightblue;">발행처</td>
+						<td style="background-color:lightblue;">보유기술 및 수준</td>
+					</tr>
+				</thead>
+				<tbody>		
+					<tr>
+						<td style="color:orange;"><input type="text"></td>
+						<td style="color:orange;"><input type="text"></td>
+						<td style="color:orange;"><input type="text"></td>
+						<td></td>
+					</tr>	
+					<tr>
+						<td style="color:orange;"><input type="text"></td>
+						<td style="color:orange;"><input type="text"></td>
+						<td style="color:orange;"><input type="text"></td>
+						<td></td>
+					</tr>
+				</tbody>			
+			</table>	
+			<b>경력사항(4대 보험 가입 경력)</b>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">활동기간</td>
+						<td style="background-color:lightblue;">기&nbsp;&nbsp;&nbsp;관</td>
+						<td style="background-color:lightblue;">담당업무</td>
+						<td style="background-color:lightblue;">경험 및 습득 역량</td>
+					</tr>
+				</thead>	
+				<tbody>	
+					<tr>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>	
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>	
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>		
+			</table>
+			<br>		
+			<center><input type="button" id="btnReg" value="등록" onclick="here();"></center>		
+			<br>	
+			<br>	
+			<br>	
+			<script type="text/javascript">
+		/* validation */
+		function here() {
+			/*alert("*nickname: " + document.getElementrById("nickname").value);*/
+			alert("저장을 완료했습니다. 지원해주셔서 감사합니다")
+			document.getElementById("form").submit();
+		}
+			</script>	
+		</form>	
+	</body>
+</html>
+
