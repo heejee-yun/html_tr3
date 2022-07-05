@@ -5,34 +5,43 @@
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<title>지원자 현황</title>
 	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 	table{
-	border: thin;
-	border-color: lightgray;
-	width: 100%;
-	text-align: center;
+		border: thin;
+		border-color: lightgray;
+		width: 100%;
+		text-align: center;
+		font-family: 'Poor Story', cursive;
 	}
 	th, td{
-	border: solid;
-	border-color: lightgray;
+		border: solid;
+		border-color: lightgray;
 	}
-	
-	
 	th{
-	background: linear-gradient(to right,lightblue, Violet, pink);
-	color: white;
+		background: linear-gradient(to right,lightblue, Violet, pink);
+		color: white;
 	}
-	
 	h1{
-	@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-			font-family: 'Jua', sans-serif;
+		font-family: 'Jua', sans-serif;
+		font-size:70px;
+		text-align: left;
+	}	
+	h3{
+		font-family: 'Jua', sans-serif;
 	}
-
-	
+	p {
+  		text-align: center;
+  		font-size: 60px;
+ 	 	margin-top: 0px;
+	}
 	</style>
 </head>
 <body>
-	<h1><img alt="" src="./image/fakecompanylogo.png">2022년 하반기 지원자 현황</h1>
-
+	<h1>
+		<img alt="" src="./image/fakecompanylogo.png">2022년 하반기 지원자 현황 
+		<br><p id="demo">마감까지</p>
+	</h1>
 	<h3> ◎ 웹 개발 분야</h3>
 	<table>
 		<tr>
@@ -102,5 +111,22 @@
 			<!-- <td></td> -->
 		</tr>
 	</table>
+	<script>
+		var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+		var x = setInterval(function() {
+		var now = new Date().getTime();
+	  	var distance = countDownDate - now;
+	  	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	  		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	  		+ minutes + "m " + seconds + "s ";
+	  	if (distance < 0) {
+	    	clearInterval(x);
+	    	document.getElementById("demo").innerHTML = "마감되었습니다";
+	  	}
+		}, 1000);
+	</script>
 </body>
 </html>
