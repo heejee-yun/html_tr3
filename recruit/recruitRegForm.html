@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device=width, initial scale=1.0">
-		<title>지원서 등록</title>	
+		<title>이력서 등록</title>	
 		<style type="text/css">
 			@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
@@ -27,12 +27,13 @@
 				padding: 10px;
 				text-align: center;
         		vertical-align: middle;
-			}
+        		}
+			tr:hover {background-color: lightpink;}
 		</style>
 	</head>
 	<body>
 		<form>
-			<h1 align="center">입사지원서</h1>	
+			<h1><img alt="" src="./image/fakecompanylogo.png" height="100px">입사지원서</h1>
 			<table width="100%">
 				<tr>
 					<th width="200px" style="background-color:lightblue;">지원분야</th>
@@ -123,14 +124,20 @@
 					</tr>
 				</thead>	
 				<tr>
-					<td style="color:orange;"><input type="text"></td>
+					<td>
+						<input type="date" name="startDate" id="startDate">
+						<input type="date" name="endDate" id="endDate">
+					</td>
 					<td style="color:orange;"><input type="text"></td>
 					<td style="color:orange;"><input type="text"></td>
 					<td style="color:orange;"><input type="text"></td>
 					<td style="color:orange;"><input type="text"></td>
 				</tr>	
 				<tr>
-					<td  style="color:orange;"><input type="text"></td>
+					<td>
+						<input type="date" name="startDate" id="startDate">
+						<input type="date" name="endDate" id="endDate">
+					</td>
 					<td style="color:orange;"><input type="text"></td>
 					<td style="color:orange;"><input type="text"></td>
 					<td style="color:orange;"><input type="text"></td>
@@ -141,7 +148,7 @@
 			<h3>교육연수</h3>
 			<table width="100%">
 				<thead>
-					<tr style="background-color:lightblue;"></tr>
+					<tr>
 						<td style="background-color:lightblue;">연수기간</td>
 						<td style="background-color:lightblue;">연수기관</td>
 						<td style="background-color:lightblue;">연수과정 및 내용</td>
@@ -149,7 +156,10 @@
 				</thead>	
 				<tbody>
 					<tr>
-						<td style="color:orange;"><input type="text"></td>
+						<td>
+							<input type="date" name="startDate" id="startDate">
+							<input type="date" name="endDate" id="endDate">
+						</td>
 						<td style="color:orange;">
 							<input type="text">
 						</td>
@@ -172,13 +182,17 @@
 				</thead>
 				<tbody>		
 					<tr>
-						<td style="color:orange;"><input type="text"></td>
+						<td>
+							<input type="date" name="startDate" id="startDate">
+						</td>
 						<td style="color:orange;"><input type="text"></td>
 						<td style="color:orange;"><input type="text"></td>
 						<td></td>
 					</tr>	
 					<tr>
-						<td style="color:orange;"><input type="text"></td>
+						<td>
+							<input type="date" name="startDate" id="startDate">
+						</td>
 						<td style="color:orange;"><input type="text"></td>
 						<td style="color:orange;"><input type="text"></td>
 						<td></td>
@@ -217,8 +231,10 @@
 				</tbody>		
 			</table>
 			<br>		
-			<center><input type="button" id="btnReg" value="등록" onclick="here();">
-			<a href="recruitList.html"><input type="button" id="btnSave" readonly value="목록" href="recruitList.html"></a></center>
+			<div align="center">
+				<input type="button" id="btnReg" value="등록" onclick="here();">
+				<a href="recruitList.html"><input type="button" id="btnSave" readonly value="목록"></a>
+			</div>
 			<br>	
 			<br>	
 			<br>	
