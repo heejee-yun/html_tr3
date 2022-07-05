@@ -1,15 +1,28 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<HTML>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device=width, initial scale=1.0">
 		<title>이력서 수정</title>	
 		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+			h1{
+				font-family: 'Jua', sans-serif;
+				font-size: 50px;
+				text-align: center;
+				}
 			table, th, td{
 				border: 1px solid lightgray;
 				border-collapse: collapse;
+				font-family: 'Poor Story', cursive;
+				font-size: 15px;
+				font-weight: bold;
 			}
-		
+			h3{
+				font-family: 'Jua', sans-serif;
+				font-size: 20px;
+			}
 			th, td{
 				padding: 10px;
 				text-align: center;
@@ -19,197 +32,208 @@
 				color: #28288C;
 				text-align: center;
 			}
-			/* ### 왜 클라스 잡아서 표시하는게 안되는가### */
 		</style>
-		
 	</head>
 	<body>
-		<h1><center>입사지원서</center></h1>	
-		<table width="100%">
-			<tr>
-				<th width="100px" style="background-color:lightblue;">지원분야</th>
-				<th width="100px"><input type="text" value="웹개발" class="aaa"></th>
-				<th width="100px" style="background-color:lightblue;">경력부분</th>
-				<th width="100px"><input type="text" value="신입" class="aaa">
-				<th width="100px" style="background-color:lightblue;">희망연봉</th>
-				<th width="100px"><input type="text" value="회사 내규에 따름" class="aaa"></th>
-			</tr>
-		</table>	
-		<br>	
-		<b>기본정보</b>
-		<table width="100%">
-			<tr>
-				<td width="150px" rowspan="6" style="color:red;"><img alt="이준호사진" src="./image/jh_re.jpg"></td>
-				<td width="100px" style="background-color:lightblue;">성명</td>
-				<td><input type="text" value="이준호" class="aaa"></td>
-				<td width="100px" style="background-color:lightblue;">한문</td>
-				<td><input type="text" value="異峻浩" class="aaa"></td>
-			</tr>	
-			<tr>
-			<!--	<td>합치는 곳</td>	-->
-				<td style="background-color:lightblue;">영문</td>
-				<td><input type="text" value="Lee Jun Ho" class="aaa"></td>
-				<td style="background-color:lightblue;">생년월일</td>
-				<td><input type="text" value="1990년 1월 25일" class="aaa"></td>
-			</tr>	
-			<tr>
-			<!--	<td>합치는 곳</td>	-->
-				<td style="background-color:lightblue;">전화번호</td>
-				<td><input type="text" value="010-1577-1577" class="aaa"></td>
-				<td style="background-color:lightblue;">비상연락망</td>
-				<td><input type="text" value="010-8282-8282" class="aaa"></td>
-			</tr>	
-			<tr>
-			<!--	<td>합치는 곳</td>	-->
-				<td style="background-color:lightblue;">전자우편</td>
-				<td><input type="text" value="let's_go_to_my_place@2pm.com" class="aaa"></td>
-				<td style="background-color:lightblue;">나이</td>
-				<td><input type="text" value="33" class="aaa"></td>
-			</tr>	
-			<tr>
-			<!--	<td>합치는 곳</td>	-->
-				<td style="background-color:lightblue;">주소</td>
-				<td colspan="3"><input type="text" value="서울 강동구 강동대로 205" class="aaa"></td>
-			<!--	<td>합치는 곳</td>	-->
-			<!--	<td>합치는 곳</td>	-->
-			</tr>	
-			<tr>
-			<!--	<td>합치는 곳</td>	-->
-				<td style="background-color:lightblue;">취미생활</td>
-				<td colspan="3">
-					리스트에서 선택
-					<select>
-						<option>노래
-						<option>댄스
-						<option>코딩
-						<option>기타
-					</select>
-				</td>
-			<!--	<td>합치는 곳</td>	-->
-			<!--	<td>합치는 곳</td>	-->	
-			</tr>
-		</table>	
-		<br>	
-		<b>학력사항(최신이력이 가장 위로)</b>
-		<table width="100%">
-			<thead>
+		<form>
+			<h1 align="center">입사지원서</h1>	
+
+			<table width="100%">
 				<tr>
-					<td style="background-color:lightblue;">기간</td>
-					<td style="background-color:lightblue;">출신학교</td>
-					<td style="background-color:lightblue;">구분</td>
-					<td style="background-color:lightblue;">학과</td>
-					<td style="background-color:lightblue;">소재지</td>
+					<th width="200px" style="background-color:lightblue;">지원분야</th>
+					<th width="200px">
+						<select>
+							<option>웹개발
+							<option>마케팅
+						</select>
+					</th>
+					<th width=200px" style="background-color:lightblue;">경력부분</th>
+					<th width=200px">
+						<select>
+							<option>신입
+							<option>경력
+						</select>
+					</th>
+					<th width="200px" style=" background-color:lightblue;">희망연봉</th>
+					<th>회사 내규에 따름</th>
 				</tr>
-			</thead>	
-			<tr>
-				<td style="color:orange;"><input type="text" value="2009.03 ~ 20215.02" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="호원대학교" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="졸업" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="공연미디어학부 연기 전공" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="서울 강서구" class="aaa"></td>
-			</tr>	
-			<tr>
-				<td  style="color:orange;"><input type="text" value="2006.03 ~ 2009.02" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="세원고등학교" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="-" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="-" class="aaa"></td>
-				<td style="color:orange;"><input type="text" value="서울" class="aaa"></td>
-			</tr>
-		</table>	
-		<br>	
-		<b>교육연수</b>
-		<table width="100%">
-			<thead>
-				<tr style="background-color:lightblue;"></tr>
-					<td style="background-color:lightblue;">연수기간</td>
-					<td style="background-color:lightblue;">연수기관</td>
-					<td style="background-color:lightblue;">연수과정 및 내용</td>
-				</tr>	
-			</thead>	
-			<tbody>
+			</table>
+			<br>	
+			<h3>기본정보</h3>
+			<table width="100%">
 				<tr>
-					<td style="color:orange;"><input type="text" value="2021.12.30~2022.6.22" class="aaa"></td>
-					<td style="color:orange;">
-						<input type="text" value="(주)이젠 아카데미" class="aaa">
+					<td width="150px" rowspan="6"><img alt="이준호사진" src="./image/jh_re.jpg"></td>
+					<td width="100px" style="background-color:lightblue;">성명</td>
+					<td><input type="text" value="이준호" class="aaa"></td>
+					<td width="100px" style="background-color:lightblue;">한문</td>
+					<td><input type="text" value="異峻浩" class="aaa"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">영문</td>
+					<td><input type="text" value="Lee Jun Ho" class="aaa"></td>
+					<td style="background-color:lightblue;">생년월일</td>
+					<td><input type="text" value="1990년 1월 25일" class="aaa"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">전화번호</td>
+					<td><input type="text" value="010-1577-1577" class="aaa"></td>
+					<td style="background-color:lightblue;">비상연락망</td>
+					<td><input type="text" value="010-8282-8282" class="aaa"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">전자우편</td>
+					<td><input type="text" value="let's_go_to_my_place@2pm.com" class="aaa"></td>
+					<td style="background-color:lightblue;">나이</td>
+					<td><input type="text" value="33" class="aaa"></td>
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">주소</td>
+					<td colspan="3"><input type="text" value="서울 강동구 강동대로 205" class="aaa"></td>
+				<!--	<td>합치는 곳</td>	-->
+				<!--	<td>합치는 곳</td>	-->
+				</tr>	
+				<tr>
+				<!--	<td>합치는 곳</td>	-->
+					<td style="background-color:lightblue;">취미생활</td>
+					<td colspan="3">
+						리스트에서 선택
+						<select>
+							<option>노래
+							<option>댄스
+							<option>코딩
+							<option>기타
+						</select>
 					</td>
-					<td style="color:orange;">
-					<input type="text" value="Open API 자바 안드로이드 웹&앱 개발" class="aaa">
-					</td>
+				<!--	<td>합치는 곳</td>	-->
+				<!--	<td>합치는 곳</td>	-->	
 				</tr>
-			</tbody>
-		</table>	
-		<br>	
-		<b>자격사항</b>
-		<table width="100%">
-			<thead>
+			</table>	
+			<br>	
+			<h3>학력사항(최신이력이 가장 위로)</h3>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">기간</td>
+						<td style="background-color:lightblue;">출신학교</td>
+						<td style="background-color:lightblue;">구분</td>
+						<td style="background-color:lightblue;">학과</td>
+						<td style="background-color:lightblue;">소재지</td>
+					</tr>
+				</thead>	
 				<tr>
-					<td style="background-color:lightblue;">취득일</td>
-					<td style="background-color:lightblue;">종류 및 등급</td>
-					<td style="background-color:lightblue;">발행처</td>
-					<td style="background-color:lightblue;">보유기술 및 수준</td>
-				</tr>
-			</thead>
-			<tbody>		
-				<tr>
-					<td style="color:orange;"><input type="text" value="2021.08" class="aaa"></td>
-					<td style="color:orange;"><input type="text" value="워드프로세서 1급" class="aaa"></td>
-					<td style="color:orange;"><input type="text" value="대한상공회의소" class="aaa"></td>
-					<td></td>
+					<td style="color:orange;"><input type="text" value="2009.03 ~ 20215.02" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="호원대학교" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="졸업" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="공연미디어학부 연기 전공" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="서울 강서구" class="aaa"></td>
 				</tr>	
 				<tr>
-					<td style="color:orange;"><input type="text" value="2021.06" class="aaa"></td>
-					<td style="color:orange;"><input type="text" value="정보처리기사" class="aaa"></td>
-					<td style="color:orange;"><input type="text" value="한국산업인력공단" class="aaa"></td>
-					<td></td>
+					<td  style="color:orange;"><input type="text" value="2006.03 ~ 2009.02" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="세원고등학교" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="-" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="-" class="aaa"></td>
+					<td style="color:orange;"><input type="text" value="서울" class="aaa"></td>
 				</tr>
-			</tbody>			
-		</table>	
-		<b>경력사항(4대 보험 가입 경력)</b>
-		<table width="100%">
-			<thead>
-				<tr>
-					<td style="background-color:lightblue;">활동기간</td>
-					<td style="background-color:lightblue;">기&nbsp;&nbsp;&nbsp;관</td>
-					<td style="background-color:lightblue;">담당업무</td>
-					<td style="background-color:lightblue;">경험 및 습득 역량</td>
-				</tr>
-			</thead>	
-			<tbody>	
-				<tr>
-					<td><input type="text" value="2008년 9월 4일 ~ 현재" class="aaa"></td>
-					<td><input type="text" value="J Y P" class="aaa"></td>
-					<td><input type="text" value="리드보컬, 메인댄서" class="aaa"></td>
-					<td><input type="text" value="그룹 활동, 개인 앨범 활동 및 연기 활동" class="aaa"></td>
-				</tr>	
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>	
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</tbody>		
-		</table>
-		<center><input type="button" id="btnSave" value="수정된 내용 저장" onclick="here();"><a href="recruitList.html"><input type="button" id="btnSave" readonly value="목록" href="recruitList.html"></a></center>
-		<br>		
-			<script type="text/javascript">
-		/* validation */
-		function here() {
-			/*alert("*nickname: " + document.getElementrById("nickname").value);*/
-			alert("수정된 내용이 저장되었습니다")
-			document.getElementById("form").submit();
-		}
-			</script>	
-		<br>	
-		<br>	
-		<br>	
+			</table>	
+			<br>	
+			<h3>교육연수</h3>
+			<table width="100%">
+				<thead>
+					<tr style="background-color:lightblue;"></tr>
+						<td style="background-color:lightblue;">연수기간</td>
+						<td style="background-color:lightblue;">연수기관</td>
+						<td style="background-color:lightblue;">연수과정 및 내용</td>
+					</tr>	
+				</thead>	
+				<tbody>
+					<tr>
+						<td style="color:orange;"><input type="text" value="2021.12.30~2022.6.22" class="aaa"></td>
+						<td style="color:orange;">
+							<input type="text" value="(주)이젠 아카데미" class="aaa">
+						</td>
+						<td style="color:orange;">
+						<input type="text" value="Open API 자바 안드로이드 웹&앱 개발" class="aaa">
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+			<br>	
+			<h3>자격사항</h3>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">취득일</td>
+						<td style="background-color:lightblue;">종류 및 등급</td>
+						<td style="background-color:lightblue;">발행처</td>
+						<td style="background-color:lightblue;">보유기술 및 수준</td>
+					</tr>
+				</thead>
+				<tbody>		
+					<tr>
+						<td style="color:orange;"><input type="text" value="2021.08" class="aaa"></td>
+						<td style="color:orange;"><input type="text" value="워드프로세서 1급" class="aaa"></td>
+						<td style="color:orange;"><input type="text" value="대한상공회의소" class="aaa"></td>
+						<td></td>
+					</tr>	
+					<tr>
+						<td style="color:orange;"><input type="text" value="2021.06" class="aaa"></td>
+						<td style="color:orange;"><input type="text" value="정보처리기사" class="aaa"></td>
+						<td style="color:orange;"><input type="text" value="한국산업인력공단" class="aaa"></td>
+						<td></td>
+					</tr>
+				</tbody>			
+			</table>	
+			<h3>경력사항(4대 보험 가입 경력)</h3>
+			<table width="100%">
+				<thead>
+					<tr>
+						<td style="background-color:lightblue;">활동기간</td>
+						<td style="background-color:lightblue;">기&nbsp;&nbsp;&nbsp;관</td>
+						<td style="background-color:lightblue;">담당업무</td>
+						<td style="background-color:lightblue;">경험 및 습득 역량</td>
+					</tr>
+				</thead>	
+				<tbody>	
+					<tr>
+						<td><input type="text" value="2008년 9월 4일 ~ 현재" class="aaa"></td>
+						<td><input type="text" value="J Y P" class="aaa"></td>
+						<td><input type="text" value="리드보컬, 메인댄서" class="aaa"></td>
+						<td><input type="text" value="그룹 활동, 개인 앨범 활동 및 연기 활동" class="aaa"></td>
+					</tr>	
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>	
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>		
+			</table>
+			<center><input type="button" id="btnSave" value="수정된 내용 저장" onclick="here();"><a href="recruitList.html"><input type="button" id="btnSave" readonly value="목록" href="recruitList.html"></a></center>
+			<br>		
+				<script type="text/javascript">
+			/* validation */
+			function here() {
+				/*alert("*nickname: " + document.getElementrById("nickname").value);*/
+				alert("수정된 내용이 저장되었습니다")
+				document.getElementById("form").submit();
+			}
+				</script>	
+			<br>	
+			<br>	
+			<br>	
+		</form>
 	</body>
-</html>
+</HTML>
 
 
 
