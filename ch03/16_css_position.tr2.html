@@ -6,30 +6,50 @@
 		<title>page2</title>
 		<style type="text/css">
 			#header {
-				background-color: blue;
+				position: pixed;
+				background-color: #E1F6FA;
 				float: none;
+				height: 100px;
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
 			}
 			#nav {
-				background-color: gray;
+				position: pixed;
+				background-color: lightgray;
 				float: left;
 				height: 200px;
+				width: 400px;
+				padding: 30px;
 			}
 			#content {
-				background-color: green;
+				position: pixed;
+				background-color: lightgreen;
 				float: left;
 				height: 200px;
+				padding: 30px;
 			}
 			#ad {
+				position: pixed;
 				background-color: yellow;
 				float: none;
 				height: 200px;
+				padding: 30px;
 			}
 			#footer {
 				background-color: black;
 				float: none;
 				color: white;
+				padding:  50px;
+			}
+			table, td {
+				border: 1px solid white;
+				text-align: center;
+				color: white;
+				border-collapse: collapse;
 			}
 		</style>
+		    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
 	</head>
 	<body>
 		페이지 구성 연습 
@@ -46,13 +66,38 @@
 			</ul>
 		</div>
 		<div id="content">
-			관리자이름아이디이메일휴대폰마지막 로그인회원가입일최근 수정일탈퇴 여부
+			<table>
+				<tr>
+					<td>관리자이름</td>
+					<td>아이디</td>
+					<td>이메일</td>
+					<td>휴대폰</td>
+					<td>최근로그인</td>
+					<td>회원가입일</td>
+					<td>최근수정일</td>
+					<td>탙퇴여부</td>
+				</tr>
+				<tr>
+					<td>이준호</td>
+					<td>Leejh</td>
+					<td>uriZip@2pm.com</td>
+					<td>010-8282-8282</td>
+					<td>2022.7.6</td>
+					<td>2022.6.1</td>
+					<td>2022.6.15</td>
+					<td>N</td>
+				</tr>
+			</table>
 		</div>
 		<div id="ad">
-			광고가 있다면 여기에 넣어주세요
+			<br>뷰가 떨어져 고민인가요?
+			<br>언제든 전문가와 상담이 가능합니다 
+			<br>지금 바로 15887-155887
+			
 		</div>
 		<div id="footer">
-			copyright
+			copyright 이랄게 그다지 없는 부족한 상상력을 짜내어 만든 페이지 
+			<br>
 		</div>	
 	</body>
 </html>

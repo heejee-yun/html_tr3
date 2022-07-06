@@ -13,16 +13,24 @@
 				background-color: gray;
 				float: left;
 				height: 200px;
+				width: 400px;
 			}
 			#content {
 				background-color: green;
 				float: none;
 				height: 200px;
+				font-align: center;
 			}
 			#footer {
 				background-color: black;
 				float: none;
 				color: white;
+			}
+			table, td {
+				border: 1px dotted white;
+				text-align: center;
+				color: white;
+				border-collapse: collapse;
 			}
 		</style>
 	</head>
@@ -40,9 +48,28 @@
 				<li>통계
 			</ul>
 		</div>
-		<div id="content">
-			관리자이름아이디이메일휴대폰마지막 로그인회원가입일최근 수정일탈퇴 여부
-		</div>
+			<table id="content">
+				<tr>
+					<td>관리자이름</td>
+					<td>아이디</td>
+					<td>이메일</td>
+					<td>휴대폰</td>
+					<td>최근로그인</td>
+					<td>회원가입일</td>
+					<td>최근수정일</td>
+					<td>탙퇴여부</td>
+				</tr>
+				<tr>
+					<td>이준호</td>
+					<td>Leejh</td>
+					<td>uriZip@2pm.com</td>
+					<td>010-8282-8282</td>
+					<td>2022.7.6</td>
+					<td>2022.6.1</td>
+					<td>2022.6.15</td>
+					<td>N</td>
+				</tr>
+			</table>
 		<div id="footer">
 			copyright
 		</div>	
