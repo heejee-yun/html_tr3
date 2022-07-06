@@ -29,6 +29,30 @@
         		vertical-align: middle;
         		}
 			tr:hover {background-color: lightpink;}
+			.button {
+			  background: linear-gradient(to right,lightblue, Violet);
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  font-family: 'Jua', sans-serif;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			  border-radius: 30px 70px / 30px 70px;
+			}
+			.button1 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid linear-gradient(to right,lightblue, Violet);
+			}
+			.button1:hover {
+			  background: linear-gradient(to right,Violet, pink);
+			  color: white;
+			}
 		</style>
 	</head>
 	<body>
@@ -232,8 +256,8 @@
 			</table>
 			<br>		
 			<div align="center">
-				<input type="button" id="btnReg" value="등록" onclick="here();">
-				<a href="recruitList.html"><input type="button" id="btnSave" readonly value="목록"></a>
+				<button class="button button1" onclick="here();"><b>등록</b></button>
+				<button class="button button1"><b><a href="recruitList.html">목록</b></button></a>
 			</div>
 			<br>	
 			<br>	
